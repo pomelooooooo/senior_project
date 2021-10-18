@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\StoresController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,9 +18,11 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/stores', function () {
-    return view('stores');
-});
+// Route::get('/stores', function () {
+//     return view('stores.index');
+// });
+
+Route::resource('stores', StoresController::class);
 
 Route::get('/customer', function () {
     return view('customer');
