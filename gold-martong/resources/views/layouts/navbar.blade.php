@@ -80,31 +80,34 @@
                            </button>
                            <div class="collapse navbar-collapse justify-content-md-center" id="cloapediamenu">
                               <ul class="navbar-nav">
-                                 <li class="nav-item active">
-                                    <a class="nav-link" href="home">Home</a>
+                              <li class="nav-item active">
+                                    <a class="nav-link" href="home">ระบบจัดการข้อมูลร้าน</a>
                                  </li>
                                  <li class="nav-item">
-                                    <a class="nav-link color-aqua-hover" href="about">About</a>
+                                    <a class="nav-link color-aqua-hover" href="about">นำเข้าข้อมูลลูกค้า</a>
                                  </li>
                                  <li class="nav-item">
-                                    <a class="nav-link color-aqua-hover" href="jewellery">Jewellery</a>
+                                    <a class="nav-link color-aqua-hover" href="jewellery">จัดการคลังทอง</a>
                                  </li>
                                  <li class="nav-item">
-                                    <a class="nav-link color-grey-hover" href="shop">Shop</a>
+                                    <a class="nav-link color-grey-hover" href="shop">จัดการการซื้อขายทอง</a>
                                  </li>
                                  <li class="nav-item">
-                                    <a class="nav-link color-grey-hover" href="contact">Contact</a>
+                                    <a class="nav-link color-grey-hover" href="contact">จัดการการจำนำทอง</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link color-grey-hover" href="contact">รายงานผลการดำเนินงาน</a>
                                  </li>
                               </ul>
                            </div>
                         </nav>
                      </div>
-                     <div class="search_bar">
+                     <!-- <div class="search_bar">
                         <form action="index.html">
                            <input type="text" class="search_field" placeholder="Search" required />
                            <button class="search_button" type="button"><i class="fa fa-search"></i></button>
                         </form>
-                     </div>
+                     </div> -->
                   </div>
                </div>
             </div>
