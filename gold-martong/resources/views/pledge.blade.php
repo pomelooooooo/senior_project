@@ -1,5 +1,5 @@
 @extends('layouts.navbar')
-@section('title','HomePage')
+@section('title','Pledge')
 @section('content')
-    <h1>jewellery</h1>
+    <h1>จำนำ</h1>
 @endsection

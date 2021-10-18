@@ -82,22 +82,22 @@
                            <div class="collapse navbar-collapse justify-content-md-center" id="cloapediamenu">
                               <ul class="navbar-nav">
                                  <li class="nav-item active">
-                                    <a class="nav-link" href="home">ระบบจัดการข้อมูลร้าน</a>
+                                    <a class="nav-link" href="store">ระบบจัดการข้อมูลร้าน</a>
                                  </li>
                                  <li class="nav-item">
-                                    <a class="nav-link color-aqua-hover" href="about">นำเข้าข้อมูลลูกค้า</a>
+                                    <a class="nav-link color-aqua-hover" href="customer">นำเข้าข้อมูลลูกค้า</a>
                                  </li>
                                  <li class="nav-item">
-                                    <a class="nav-link color-aqua-hover" href="jewellery">จัดการคลังทอง</a>
+                                    <a class="nav-link color-aqua-hover" href="treasury">จัดการคลังทอง</a>
                                  </li>
                                  <li class="nav-item">
-                                    <a class="nav-link color-grey-hover" href="shop">จัดการการซื้อขายทอง</a>
+                                    <a class="nav-link color-grey-hover" href="trade">จัดการการซื้อขายทอง</a>
                                  </li>
                                  <li class="nav-item">
-                                    <a class="nav-link color-grey-hover" href="contact">จัดการการจำนำทอง</a>
+                                    <a class="nav-link color-grey-hover" href="pledge">จัดการการจำนำทอง</a>
                                  </li>
                                  <li class="nav-item">
-                                    <a class="nav-link color-grey-hover" href="contact">รายงานผลการดำเนินงาน</a>
+                                    <a class="nav-link color-grey-hover" href="report">รายงานผลการดำเนินงาน</a>
                                  </li>
                               </ul>
                            </div>
