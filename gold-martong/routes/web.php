@@ -17,23 +17,23 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/home', function () {
-    return view('home');
+Route::get('/customer', function () {
+    return view('customer');
 });
 
-Route::get('/about', function () {
-    return view('about');
+Route::get('/treasury', function () {
+    return view('treasury');
 });
 
-Route::get('/contact', function () {
-    return view('contact');
+Route::get('/trade', function () {
+    return view('trade');
 });
 
-Route::get('/jewellery', function () {
-    return view('jewellery');
+Route::get('/pledge', function () {
+    return view('pledge');
 });
 
-Route::get('/shop', function () {
-    return view('shop');
+Route::get('/report', function () {
+    return view('report');
 });
 

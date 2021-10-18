@@ -1,5 +1,5 @@
 @extends('layouts.navbar')
 @section('title','Trade')
 @section('content')
-    <h1>trade</h1>
+    <h1>จัดการการซื้อขายทอง</h1>
 @endsection

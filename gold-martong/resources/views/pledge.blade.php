@@ -1,5 +1,5 @@
 @extends('layouts.navbar')
 @section('title','Pledge')
 @section('content')
-    <h1>จำนำ</h1>
+    <h1>จัดการการจำนำทอง</h1>
 @endsection
