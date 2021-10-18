@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/stores', function () {
+    return view('stores');
+});
+
 Route::get('/customer', function () {
     return view('customer');
 });
@@ -35,5 +39,13 @@ Route::get('/pledge', function () {
 
 Route::get('/report', function () {
     return view('report');
+});
+
+Route::get('/member', function () {
+    return view('member.index');
+});
+
+Route::get('/admin', function () {
+    return view('admin.index');
 });
 
