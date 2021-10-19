@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Stores;
 use Illuminate\Http\Request;
+use Illuminate\Session\Store;
 
 class StoresController extends Controller
 {
@@ -14,7 +16,8 @@ class StoresController extends Controller
     public function index()
     {
         // dd('eeeee');
-        return view('stores.index');
+        $stores = Stores::all()->toArray(); 
+        return view('stores.index', compact('stores'));
 
     }
 
@@ -36,7 +39,18 @@ class StoresController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $stores = new Stores(
+            [
+                'name' => $request->get('name'),
+                'address' => $request->get('address'),
+                'tel' => $request->get('tel'),
+                'tax_identification_number' => $request->get('tax_identification_number'),
+                'commercial_registration_number' => $request->get('commercial_registration_number'),
+            ]
+        );
+        $stores->save();
+        $stores = Stores::all()->toArray(); 
+        return view('stores.index', compact('stores'));
     }
 
     /**
@@ -58,7 +72,10 @@ class StoresController extends Controller
      */
     public function edit($id)
     {
-        return view('stores.edit');
+        // dd($id);
+        $stores = Stores::find($id);
+        // $stores = Stores::all()->toArray(); 
+        return view('stores.edit', compact('stores', 'id'));
     }
 
     /**
@@ -70,7 +87,16 @@ class StoresController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        // dd($id);
+        $stores = Stores::find($id);
+        $stores->name = $request->get('name');
+        $stores->address = $request->get('address');
+        $stores->tel = $request->get('tel');
+        $stores->tax_identification_number = $request->get('tax_identification_number');
+        $stores->commercial_registration_number = $request->get('commercial_registration_number');
+        $stores->save();
+        $stores = Stores::all()->toArray(); 
+        return view('stores.index',compact('stores','id'));
     }
 
     /**
@@ -81,6 +107,9 @@ class StoresController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $stores = Stores::find($id); 
+        $stores->delete();
+        $stores = Stores::all(); 
+        return view('stores.index',compact('stores'))->with('success', 'ลบข้อมูลเรียบร้อย');
     }
 }

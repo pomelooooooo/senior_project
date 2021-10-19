@@ -23,6 +23,10 @@ Route::get('/', function () {
 // });
 
 Route::resource('stores', StoresController::class);
+// Route::get('/stores/all', [StoresController::class,'index'])->name('storesAll');
+Route::get('/stores/edit/{id}', [StoresController::class,'edit']);
+Route::get('/stores/update/{id}', [StoresController::class,'update']);
+Route::get('/stores/delete/{id}', [StoresController::class,'destroy']);
 
 Route::get('/customer', function () {
     return view('customer');
